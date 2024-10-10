@@ -46,8 +46,8 @@ const Slider = () => {
     // Dynamic styles for the slider
     const sliderStyle = {
         backgroundImage: `url(${imageArray[imageIndex]})`,
-        backgroundRepeat: "no repeat",
-        backgroundSize: isMobile ? "contain" : "cover", // Adjust background size based on screen size
+        backgroundRepeat: "no-repeat",
+        backgroundSize: isMobile ? "cover" : "cover", // Adjust background size based on screen size
         backgroundPosition: isMobile ? "center top" : "center",
         height: isMobile ? "80vh" : "100vh", // Adjust height based on screen size
         width: "100vw",
