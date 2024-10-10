@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaInstagram, FaTwitter, FaMailBulk, FaPhone } from "react-icons/fa";
+import { FaInstagram, FaTwitter, FaMailBulk, FaPhone, FaHamburger } from "react-icons/fa";
 
 const Header = () => {
   const [isSidebarActive, setIsSidebarActive] = useState(false);
@@ -32,12 +32,12 @@ const Header = () => {
         </ul>
 
         <div className="contact-us">
-          <p>You can call us</p>
+          <p>Our Hotline</p>
           <p>+234 000 000 0000</p>
         </div>
 
         <div id="menu-icon" onClick={toggleSidebar}>
-          {isSidebarActive ? "✖" : "≡"}
+          {isSidebarActive ? "✖" : <FaHamburger />}
         </div>
 
         <ul className={`sidebar ${isSidebarActive ? "active" : ""}`}>

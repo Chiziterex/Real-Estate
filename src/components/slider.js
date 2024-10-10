@@ -47,7 +47,7 @@ const Slider = () => {
     const sliderStyle = {
         backgroundImage: `url(${imageArray[imageIndex]})`,
         backgroundRepeat: "no-repeat",
-        backgroundSize: isMobile ? "cover" : "cover", // Adjust background size based on screen size
+        backgroundSize: "cover",
         backgroundPosition: isMobile ? "center top" : "center",
         height: isMobile ? "80vh" : "100vh", // Adjust height based on screen size
         width: "100vw",

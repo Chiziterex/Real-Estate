@@ -1,3 +1,7 @@
+@media (max-width: 1200px) {
+ 
+}
+
 @media (max-width: 960px) {
   .home .content{
     margin-left: 4rem;
@@ -24,9 +28,13 @@
     flex-direction: column;
     text-align: center;
   }
-  .about .content .box .text{
+  .about .content .box .text {
     line-height: 1.75rem;
     width: fit-content;
+    align-items: center;
+   }
+   .about .content .box .text .btn-container{
+    justify-content: center;
    }
 }
 
@@ -59,7 +67,27 @@
       border-radius: 0;
       line-height: 1.6;
     }
-    
+    .home .content .btn-container .btn {
+      font-size: 0.875rem;
+    }
+    .buy .box-container .box img{
+      width: 350px;
+      height: 300px;
+    }
+    .buy .top-btns p{
+      font-size: 0.875rem;
+      padding: 0.3rem 1.75rem;
+    }
+    .buy .country-btns{
+      gap: 1rem;
+    }
+    .buy .country-btns p{
+      font-size: 0.875rem;
+      padding: 0.3rem 1.75rem;
+    }
+    .buy .box-container .box .top-icons{
+      gap: 15.9rem;
+    }
   }
 
   @media (max-width: 400px) {

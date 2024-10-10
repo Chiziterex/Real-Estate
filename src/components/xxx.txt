@@ -1,0 +1,54 @@
+<div className="box-container">
+              {buyData.map((property) => (
+                <div key={property.id} className="box">
+                <div className="top-icons">
+              <p>
+                <FaHeart />
+              </p>
+              <p>
+                <FaShoppingCart />
+              </p>
+              </div>
+                      <img src={property.img} alt="unable to load photo" />
+                      <div className="info">
+                      <h3>{property.amount}</h3>
+                      <span className="more-info">
+                              <p>{property.rooms}</p>
+                              <p>{property.bathrooms}</p>
+                              <p>`{property.size} sqft`</p>
+                          </span>
+                          <span className="location-info">
+                              <p><FaLocationArrow /></p>
+                              <p>{property.location}</p>
+                          </span>
+                      </div>
+                </div>
+              ))}
+</div>
+            
+
+
+          <div className="box">
+            <div className="top-icons">
+              <p>
+                <FaHeart />
+              </p>
+              <p>
+                <FaShoppingCart />
+              </p>
+              </div>
+                      <img src={realEstate6} alt="unable to load"></img>
+                      <div className="info">
+                          <h3>₦15,000,000</h3>
+                          <span className="more-info">
+                              <p>3 rooms</p>
+                              <p>2 bathrooms</p>
+                              <p>5 sqft</p>
+                          </span>
+                          <span className="location-info">
+                              <p><FaLocationArrow /></p>
+                              <p>Umuguma, Owerri</p>
+                          </span>
+                      </div>
+          </div>
+          

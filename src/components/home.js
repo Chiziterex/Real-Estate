@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./header";
+import About from "./about";
 import { FaArrowRight } from "react-icons/fa";
 // import { BrowserRouter, Router } from "react-router-dom";
 
@@ -16,15 +17,9 @@ const Home = () => {
               <button className="btn">learn more <FaArrowRight /></button>
             </div>
           </div>
-          
-          {/* <div className="homeIconsFooter">
-            <FaInstagram />
-            <FaTwitter />
-            <FaMailBulk />
-            <FaPhone />
-            </div> */}
       </div>
-    </div>
+      </div>
+      <About />
   </>
     )
 };
