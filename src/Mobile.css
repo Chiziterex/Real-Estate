@@ -37,9 +37,6 @@
     header .links {
       display: none;
     }
-    .home{
-      height: 80vh;
-    }
     .home .backdrop-color{
       height: 80vh;
     }
