@@ -1,6 +1,7 @@
 import React from "react";
-import Refinery2 from "../assets/refinery2.jpg"
-import RealEstate1 from "../assets/realEstate1.jpg"
+import Refinery2 from "../assets/fuel1.png"
+import RealEstate1 from "../assets/house1.png"
+import { FaArrowRight } from "react-icons/fa";
 
 const About = () => {
     return (
@@ -13,7 +14,7 @@ const About = () => {
                         <h3>Real Estate</h3>
                         <div className="text">
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elitLorem, ipsum dolor sit amet consectetur adipisicing. Lorem, ipsum dolor sit amet consectetur adipisicing elitLorem, ipsum dolor sit amet consectetur adipisicing. </p>
-                            <button className="btn">Explore</button>
+                            <button className="btn">Find a Home <FaArrowRight/></button>
                         </div>
                     </div>
                     <div className="box">
@@ -21,7 +22,7 @@ const About = () => {
                         <h3>Oil and Gas</h3>
                         <div className="text">
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elitLorem, ipsum dolor sit amet consectetur adipisicing. Lorem, ipsum dolor sit amet consectetur adipisicing elitLorem, ipsum dolor sit amet consectetur adipisicing. </p>
-                            <button className="btn">Explore</button>
+                            <button className="btn">Explore <FaArrowRight/></button>
                         </div>
                     </div>
                 </div>

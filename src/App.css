@@ -197,6 +197,10 @@ header .contact-us p:nth-child(2) {
 }
 
 .home .content .btn-container .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
   line-height: 1.7;
   background-color: var(--animal-blood-);
   color: var(--white-);
@@ -273,14 +277,19 @@ header .contact-us p:nth-child(2) {
 }
 
 .about .content .text .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
   line-height: 1.7;
   margin-top: 0.5rem;
   background-color: var(--animal-blood-);
   color: var(--white-);
-  font-size: 0.875rem;
-  text-transform: capitalize;
+  font-size: 0.9rem;
   padding: 0.3rem 2rem;
   border-radius: 3px;
+  letter-spacing: 1px;
+  font-family: "Capriola", sans-serif;
   transition: all 0.2s ease-in;
 }
 

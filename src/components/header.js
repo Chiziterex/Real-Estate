@@ -27,7 +27,7 @@ const Header = () => {
         <ul className="links">
           <li>Home</li>
           <li>About</li>
-          <li>Real Estate</li>
+          <li>Properties</li>
           <li>Oil and gas</li>
         </ul>
 
