@@ -338,6 +338,12 @@ header .contact-us p:nth-child(2) {
   transition: all 0.2s ease-in;
 }
 
+.buy .top-btns .current{
+  color: var(--white-);
+  background-color: var(--animal-blood-);
+  cursor: not-allowed;
+}
+
 .buy .top-btns p:hover,
 .buy .top-btns p:focus{
   background-color: var(--animal-blood-);

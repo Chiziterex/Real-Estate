@@ -1,19 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Header from "./header";
-import { buyData } from "./buyData";
+import { rentData } from "./rentData";
 import { FaArrowRight, FaHeart , FaShoppingCart, FaLocationArrow, FaArrowDown } from "react-icons/fa";
 
-const Buy = () => {
+const Rent = () => {
   return (
     <>
       <Header />
-      <div className="buy">
+      <div className="buy rent">
         <div className="top-btns">
           <p className="current">
-            Buy <FaArrowDown />
+            Rent <FaArrowDown />
           </p>
-          <Link to='/rent'><p>Rent<FaArrowRight /></p></Link>
+          <Link to='/buy'><p>Buy<FaArrowRight /></p></Link>
         </div>
         <div className="country-btns">
         <p>Australia</p>
@@ -22,7 +22,7 @@ const Buy = () => {
         </div>
 
         <div className="box-container">
-              {buyData.map((property) => (
+              {rentData.map((property) => (
                 <div key={property.id} className="box">
                 <div className="top-icons">
               <p>
@@ -53,4 +53,4 @@ const Buy = () => {
   );
 };
 
-export default Buy;
+export default Rent;

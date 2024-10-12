@@ -17,7 +17,7 @@ const About = () => {
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elitLorem, ipsum dolor sit amet consectetur adipisicing. Lorem, ipsum dolor sit amet consectetur adipisicing elitLorem, ipsum dolor sit amet consectetur adipisicing. </p>
                             <div className="btn-container">
                             <Link to='/buy'><button className="btn">Buy<FaArrowRight /></button></Link>
-                                <button className="btn">Rent<FaArrowRight/></button>
+                            <Link to='/rent'><button className="btn">Rent<FaArrowRight /></button></Link>
                             </div>
                         </div>
                     </div>
