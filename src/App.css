@@ -39,12 +39,12 @@ header {
   width: 90%;
   top: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 10;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 12px 5%;
-  /* background-color: color-mix(in srgb, var(--white-) 30%, var(--black-) 10%); */
+  background-color: transparent;
   backdrop-filter: blur(8px);
 }
 
@@ -65,7 +65,7 @@ header ul {
 header ul li {
   color: var(--black-);
   font-size: 0.825rem;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
   text-transform: uppercase;
   font-family: "Capriola", sans-serif;
@@ -73,7 +73,10 @@ header ul li {
 }
 
 header ul li:hover {
-  color:var(--animal-blood-);
+  color:var(--white-);
+  background-color: var(--olivine);
+  border-radius: 3px;
+  font-weight: 300;
 }
 
 header.scroll {
@@ -96,6 +99,58 @@ header .contact-us p:nth-child(2) {
   text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
 }
 
+/* Dropdown Button */
+.dropbtn {
+  color: var(--black-);
+  background-color: transparent;
+  font-size: 0.825rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "Capriola", sans-serif;
+  transition: all 0.4s ease-in;
+}
+
+.dropdown:hover .dropbtn {
+  border-bottom: 1px solid var(--animal-blood-);
+  color: var(--white-);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content .btn {
+  color: var(--black-);
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  display: block;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: all .2s ease-in;
+}
+
+.dropdown-content .btn:hover {
+  background-color: var(--olivine);
+  color: var(--white-);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+
 /* Sidebar styles */
 .sidebar {
   display: none;
@@ -114,13 +169,39 @@ header .contact-us p:nth-child(2) {
   transition: all 0.5s ease;
 }
 
-.sidebar li {
+.sidebar li{
   padding: 20px 0;
   border-bottom: 2px solid var(--animal-blood-);
   font-size: 1rem;
   cursor: pointer;
   transition: all 0.5s ease;
-  color: var(--txt-color-);
+  color: var(--black-);
+}
+
+.sidebar li:hover {
+  background-color: var(--animal-blood-);
+  color:  var(--white-);
+}
+
+.sidebar .dropdown .dropbtn{
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  color: var(--black-);
+}
+
+.sidebar .dropdown .dropbtn:hover{
+  background-color: var(--animal-blood-);
+  color:  var(--white-);
+}
+
+.sidebar .dropdown-content {
+  transform: translate(120%, -37%);
+}
+
+.sidebar .dropdown-content .btn:hover {
+  background-color: var(--animal-blood-);
+  color: var(--white-);
 }
 
 .sidebar .icons {
@@ -140,6 +221,7 @@ header .contact-us p:nth-child(2) {
   font-size: 1.5rem;
   font-weight: 800;
 }
+
 
 /* home styles */
 
@@ -419,6 +501,7 @@ header .contact-us p:nth-child(2) {
   font-size: 1rem;
   border-top-left-radius: 3px;
   box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  transition: all .3s ease-in;
   cursor: pointer;
 }
 

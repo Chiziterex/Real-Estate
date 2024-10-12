@@ -1,5 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { FaInstagram, FaTwitter, FaMailBulk, FaPhone, FaHamburger } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import {
+  FaInstagram,
+  FaTwitter,
+  FaMailBulk,
+  FaPhone,
+  FaHamburger,
+} from "react-icons/fa";
 
 const Header = () => {
   const [isSidebarActive, setIsSidebarActive] = useState(false);
@@ -33,9 +40,19 @@ const Header = () => {
         <h3>petviv</h3>
 
         <ul className="links">
-          <li>Home</li>
+          <Link to="/slider">
+            <li>Home</li>
+          </Link>
           <li>About</li>
-          <li>Properties</li>
+          <li>
+            <div class="dropdown">
+              <p class="dropbtn">Properties</p>
+              <div class="dropdown-content">
+              <Link to='/buy'><p className="btn">Buy</p></Link>
+              <Link to='/rent'><p className="btn">Rent</p></Link>
+              </div>
+            </div>
+          </li>
           <li>Oil and gas</li>
         </ul>
 
@@ -49,9 +66,19 @@ const Header = () => {
         </div>
 
         <ul className={`sidebar ${isSidebarActive ? "active" : ""}`}>
-          <li>Home</li>
+          <Link to="/slider">
+            <li>Home</li>
+          </Link>
           <li>About</li>
-          <li>Real Estate</li>
+          <li>
+            <div class="dropdown">
+              <p class="dropbtn">Properties</p>
+              <div class="dropdown-content">
+              <Link to='/buy'><p className="btn">Buy</p></Link>
+              <Link to='/rent'><p className="btn">Rent</p></Link>
+              </div>
+            </div>
+          </li>
           <li>Oil and gas</li>
           <div className="icons">
             <FaInstagram />

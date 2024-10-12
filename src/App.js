@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 import './Mobile.css';
+import ScrollToTop from './components/ScrollToTop';
 import Slider from './components/slider';
-import Home from './components/home';
 import About from './components/about';
 import NoPage from './components//nopage';
 import Buy from './components/buy';
@@ -13,9 +13,10 @@ function App() {
   return (
     <>
       <BrowserRouter>
+      <ScrollToTop />
       <Routes>
           <Route index element={<Slider />} />
-          <Route path="/home" element={<Home />} />
+          <Route path="/slider" element={<Slider />} />
           <Route path="/about" element={<About />} />
           <Route path="/buy" element={<Buy />} />
           <Route path="/rent" element={<Rent />} />
