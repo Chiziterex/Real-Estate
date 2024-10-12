@@ -110,7 +110,7 @@ header .contact-us p:nth-child(2) {
   padding: 1.5rem 0 2rem;
   display: block;
   text-align: center;
-  background-color: color-mix(in srgb, var(--white-) 90%, var(--black-) 10%);
+  background-color: var(--white-);
   transition: all 0.5s ease;
 }
 
@@ -264,8 +264,7 @@ header .contact-us p:nth-child(2) {
   height: 100px;
   object-fit: cover;
   object-position: center;
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
+  border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
 

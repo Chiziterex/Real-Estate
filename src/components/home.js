@@ -1,13 +1,10 @@
 import React from "react";
-import Header from "./header";
-import About from "./about";
 import { FaArrowRight } from "react-icons/fa";
 // import { BrowserRouter, Router } from "react-router-dom";
 
 const Home = () => {
   return (
-    <>
-      <Header />
+    <> 
     <div className="home">
       <div className="backdrop-color">
         <div className="content">
@@ -19,7 +16,6 @@ const Home = () => {
           </div>
       </div>
       </div>
-      <About />
   </>
     )
 };

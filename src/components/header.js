@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaInstagram, FaTwitter, FaMailBulk, FaPhone, FaHamburger } from "react-icons/fa";
 
 const Header = () => {
   const [isSidebarActive, setIsSidebarActive] = useState(false);
-  const [isheaderActive, setHeader] = useState(false);
+  const [isHeaderActive, setHeaderActive] = useState(false);
 
   const toggleSidebar = () => {
     setIsSidebarActive(!isSidebarActive);
@@ -11,17 +11,25 @@ const Header = () => {
 
   const changeColor = () => {
     if (window.scrollY >= 40) {
-      setHeader(true);
+      setHeaderActive(true);
     } else {
-      setHeader(false);
+      setHeaderActive(false);
     }
   };
 
-  window.addEventListener("scroll", changeColor);
+  // Add scroll event listener in useEffect to avoid multiple bindings
+  useEffect(() => {
+    window.addEventListener("scroll", changeColor);
+
+    // Cleanup function to remove the event listener when component unmounts
+    return () => {
+      window.removeEventListener("scroll", changeColor);
+    };
+  }, []); // Empty dependency array means this runs once on mount
 
   return (
     <>
-      <header className={isheaderActive ? "scroll" : ""}>
+      <header className={isHeaderActive ? "scroll" : ""}>
         <h3>petviv</h3>
 
         <ul className="links">
@@ -41,7 +49,7 @@ const Header = () => {
         </div>
 
         <ul className={`sidebar ${isSidebarActive ? "active" : ""}`}>
-        <li>Home</li>
+          <li>Home</li>
           <li>About</li>
           <li>Real Estate</li>
           <li>Oil and gas</li>

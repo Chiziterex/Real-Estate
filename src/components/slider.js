@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
-import Home from "./home.js";
+import Header from "./header";
+import Home from "./home";
+import About from "./about";
 import realEstate1 from "../assets/realEstate1.jpg";
 import realEstate2 from "../assets/realEstate2.jpg";
 import realEstate3 from "../assets/realEstate3.jpg";
@@ -56,9 +58,13 @@ const Slider = () => {
     };
 
     return (
+        <>
         <div style={sliderStyle} className="slider">
-            <Home />
+                <Header />
+                <Home />
         </div>
+            <About />
+        </>   
     );
 };
 
