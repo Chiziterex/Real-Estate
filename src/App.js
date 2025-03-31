@@ -7,6 +7,7 @@ import About from './components/about';
 import NoPage from './components//nopage';
 import Buy from './components/buy';
 import Rent from './components/rent';
+import OilandGas from './components/oilgas';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/buy" element={<Buy />} />
           <Route path="/rent" element={<Rent />} />
+          <Route path="/oilandgas" element={<OilandGas />} />
           <Route path="*" element={<NoPage />} />
         </Routes>
       </BrowserRouter>

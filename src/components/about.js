@@ -27,7 +27,7 @@ const About = () => {
                         <div className="text">
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elitLorem, ipsum dolor sit amet consectetur adipisicing. Lorem, ipsum dolor sit amet consectetur adipisicing elitLorem, ipsum dolor sit amet consectetur adipisicing. </p>
                             <div className="btn-container">
-                              <button className="btn">Explore <FaArrowRight/></button>
+                            <Link to='/oilandgas'><button className="btn">Explore<FaArrowRight /></button></Link>
                             </div>
                         </div>
                     </div>

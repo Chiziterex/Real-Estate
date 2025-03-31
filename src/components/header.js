@@ -53,7 +53,7 @@ const Header = () => {
               </div>
             </div>
           </li>
-          <li>Oil and gas</li>
+          <Link to='/oilandgas'><li className="btn">Oil and Gas</li></Link>
         </ul>
 
         <div className="contact-us">

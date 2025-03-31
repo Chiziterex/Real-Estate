@@ -51,7 +51,7 @@ header {
 header h3 {
   font-size: 2rem;
   font-weight: 800;
-  font-family: "Henny Penny", system-ui;
+  font-family: "Henny Penny", sans-serif;
 }
 
 header ul {
@@ -74,8 +74,9 @@ header ul li {
 
 header ul li:hover {
   color:var(--white-);
-  background-color: var(--olivine);
+  background-color: var(--animal-blood-);
   border-radius: 3px;
+  scale: 1.1;
   font-weight: 300;
 }
 
@@ -221,7 +222,6 @@ header .contact-us p:nth-child(2) {
   font-size: 1.5rem;
   font-weight: 800;
 }
-
 
 /* home styles */
 
@@ -561,3 +561,37 @@ header .contact-us p:nth-child(2) {
   gap: 1rem;
 }
 
+/* oil and gas */
+.oilgas #header{
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--sea-green-);
+  font-size: 1.7rem;
+  letter-spacing: 0.2;
+  background-color: var(--deep-champagne);
+  border-radius: 4px;
+  padding: 1rem;
+  text-shadow: 2px 2px 3px rgb(46, 173, 91, 0.6);
+  box-shadow: 0px 1px 4px rgb(0, 0, 0, 0.05);
+  cursor: default;
+}
+
+.oilgas .head{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(4deg);
+}
+
+.oilgas .box-container{
+  gap: 2rem;
+  padding: 2rem 0 2rem 0;
+}
+
+.oilgas .box-container .boxx{
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 3px;
+  background-color: red;
+}
